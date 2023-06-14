@@ -1,0 +1,36 @@
+.daily-quote {
+  margin: 10px;
+  display: flex;
+  width: 80%;
+  max-width: 400px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  background: #b8e1fc; /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #b8e1fc 0%, #a9d2f3 10%, #90bae4 21%, #90bcea 32%, #90bff0 41%, #6ba8e5 51%, #a2daf5 83%, #bdf3fd 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #b8e1fc 0%, #a9d2f3 10%, #90bae4 21%, #90bcea 32%, #90bff0 41%, #6ba8e5 51%, #a2daf5 83%, #bdf3fd 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #b8e1fc 0%, #a9d2f3 10%, #90bae4 21%, #90bcea 32%, #90bff0 41%, #6ba8e5 51%, #a2daf5 83%, #bdf3fd 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  border-radius: 33px 0 33px 0;
+  -moz-border-radius: 33px 0 33px 0;
+  -webkit-border-radius: 33px 0 33px 0;
+  border: 5px ridge #acbae0;
+  cursor: default;
+}
+
+.daily-quote .title {
+  margin: 8px;
+  font-size: 18px;
+}
+
+.daily-quote .quote {
+  padding: 0 10px;
+  margin: 8px;
+}
+
+.daily-quote .author {
+  padding: 0 10px 10px 10px;
+  margin: 5px;
+  font-size: 12px;
+  font-style: italic;
+}
