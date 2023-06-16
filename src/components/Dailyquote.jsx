@@ -1,5 +1,7 @@
-import { useState, useEffect } from 'react';
+// eslint-disable-next-line no-unused-vars
+import React from 'react';
 import styles from '@/styles/dailyquote.module.css';
+import { useState, useEffect } from 'react';
 
 function Dailyquote() {
   const [data, setData] = useState({});
@@ -42,7 +44,7 @@ function Dailyquote() {
   /* show error message with style ;) */
   if (hasError) {
     return (
-      <section className={`${styles['daily-quote']}`}>
+      <section className={styles.dailyQuote}>
         <p className="quote">Error loading daily quote...</p>
       </section>
     );
@@ -51,15 +53,15 @@ function Dailyquote() {
   /* show loading message with style ;) */
   if (loading) {
     return (
-      <section className={`${styles['daily-quote']}`}>
+      <section className={styles.dailyQuote}>
         <p className="quote">Loading...</p>
       </section>
     );
   }
 
   return (
-    <section className={`${styles['daily-quote']}`}>
-      <h1 className={styles.title}>Daily Quote</h1>
+    <section className={styles.dailyQuote}>
+      <p className={styles.titleQuote}>Daily Quote</p>
       <p className={styles.quote}>{data.quote}</p>
       <p className={styles.author}>{data.author}</p>
     </section>
