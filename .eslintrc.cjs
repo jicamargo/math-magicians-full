@@ -15,4 +15,12 @@ module.exports = {
   rules: {
     'react-refresh/only-export-components': 'warn',
   },
+  overrides: [
+    {
+      files: ['*.test.js'],
+      env: {
+        jest: true,
+      },
+    },
+  ],
 }
