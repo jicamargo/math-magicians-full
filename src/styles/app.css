@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  line-height: 1.4;
+  color: #4a4747;
+  background: #fff;
+  height: 100vh;
+  font-weight: 400;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  padding: 2rem 1rem;
+  background: rgba(235, 233, 249, 1);
+  background: -moz-radial-gradient(center, ellipse cover, rgba(235, 233, 249, 1) 0%, rgba(216, 208, 239, 1) 74%, rgba(193, 191, 234, 1) 100%);
+  background: -webkit-gradient(radial, center center, 0, center center, 100%, color-stop(0%, rgba(235, 233, 249, 1)), color-stop(74%, rgba(216, 208, 239, 1)), color-stop(100%, rgba(193, 191, 234, 1)));
+  background: -webkit-radial-gradient(center, ellipse cover, rgba(235, 233, 249, 1) 0%, rgba(216, 208, 239, 1) 74%, rgba(193, 191, 234, 1) 100%);
+  background: -o-radial-gradient(center, ellipse cover, rgba(235, 233, 249, 1) 0%, rgba(216, 208, 239, 1) 74%, rgba(193, 191, 234, 1) 100%);
+  background: radial-gradient(ellipse at center, rgba(235, 233, 249, 1) 0%, rgba(216, 208, 239, 1) 74%, rgba(193, 191, 234, 1) 100%);
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+/* Active route */
+.active {
+  color: #005bb3;
+}
+
+/* ==========================
+navbar navigation
+======================== */
+.navbar {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .menu-icon {
+  font-size: 1rem;
+  color: #4a4747;
+  margin-left: 1rem;
+  z-index: 99;
+  display: none;
+}
+
+.menu-nav {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: absolute;
+  cursor: pointer;
+  list-style: none;
+  z-index: 9;
+  font-size: 18px;
+  box-shadow: 0 10px 15px -3px rgb(46 41 51 / 8%), 0 4px 6px -2px rgb(71 63 79 / 16%);
+  background-color: aliceblue;
+  opacity: 0.8;
+  border: none;
+  border-radius: 5px;
+}
+
+.menu-nav li a,
+.menu-nav li span {
+  display: block;
+  padding: 1rem;
+}
+
+/* content section */
+
+.content {
+  padding: 4rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Media Queries */
+@media screen and (min-width: 480px) {
+  div.wrapper h1 {
+    font-size: 3rem;
+  }
+
+  .content {
+    flex-direction: row;
+    padding: 4rem;
+    justify-content: space-evenly;
+  }
+
+  .menu-nav {
+    justify-content: right;
+  }
+
+  .navbar .menu-icon {
+    font-size: 1.5rem;
+    color: #4a4747;
+    margin-left: 2rem;
+    display: block;
+  }
+}
